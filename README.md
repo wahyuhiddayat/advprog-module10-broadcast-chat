@@ -45,6 +45,8 @@ Dalam kasus ini, client mencoba menghubungi port 2000, tetapi server mendengarka
 
 ***Experiment 2.3: Small changes, add IP and Port***
 
+<img width="1156" alt="Screenshot 2024-05-06 at 6 27 23 PM" src="https://github.com/wahyuhiddayat/advprog-module10-broadcast-chat/assets/119432989/19f44572-b2c4-42ee-bb7c-5c2da61d2667">
+
 Saya melakukan beberapa modifikasi pada server.rs dan client.rs. 
 
 Pada `server.rs` saya memodifikasinya menjadi:
