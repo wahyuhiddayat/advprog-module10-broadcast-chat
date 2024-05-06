@@ -30,3 +30,9 @@ Untuk menjalankan server dan tiga client:
 5. Penjelasan:
 
    Server menggunakan `broadcast channel` untuk menyiarkan pesan dari satu client ke semua client lainnya. Setiap pesan yang dikirim oleh satu client diterima oleh server dan kemudian disiarkan ke semua client yang terhubung, termasuk pengirimnya sendiri. Oleh karena itu, setiap client melihat pesan mereka sendiri dan pesan dari client lain dalam urutan kedatangan mereka.
+
+***Experiment 2.2: Modifying port***
+
+Jika port antara server dan client sama, program akan berjalan tanpa error. Namun, jika port antara server dan client berbeda, misalnya port 8080 untuk server dan port 2000 untuk client, maka akan muncul error "Connection refused". Ini menunjukkan bahwa client mencoba terhubung ke port yang tidak ada server yang mendengarkan.
+
+Dalam kasus ini, client mencoba menghubungi port 2000, tetapi server mendengarkan di port 8080. Agar client dan server dapat berkomunikasi, port yang digunakan harus sama. Misalnya, jika server mendengarkan di port 8080, client juga harus terhubung ke port yang sama.
