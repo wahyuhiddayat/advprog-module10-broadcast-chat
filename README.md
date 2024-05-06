@@ -3,6 +3,8 @@ Wahyu Hidayat - 2206081894 - Advanced Programming B
 
 ***Experiment 2.1: Original code, and how it run***
 
+<img width="1158" alt="Screenshot 2024-05-06 at 4 56 08 PM" src="https://github.com/wahyuhiddayat/advprog-module10-broadcast-chat/assets/119432989/c0960f33-cbd7-4c39-8f40-c7bbd1b38cde">
+
 Untuk menjalankan server dan tiga client:
 1. Buka empat terminal terpisah.
 2. Terminal pertama akan digunakan untuk menjalankan server menggunakan perintah:
