@@ -33,6 +33,12 @@ Untuk menjalankan server dan tiga client:
 
 ***Experiment 2.2: Modifying port***
 
+Port client dan server sama
+<img width="1160" alt="Screenshot 2024-05-06 at 5 21 05 PM" src="https://github.com/wahyuhiddayat/advprog-module10-broadcast-chat/assets/119432989/0fe7443c-b1e3-4e05-9c04-37f827921bc1">
+
+Port client dan server berbeda
+<img width="1156" alt="Screenshot 2024-05-06 at 5 24 30 PM" src="https://github.com/wahyuhiddayat/advprog-module10-broadcast-chat/assets/119432989/1a4cd94d-fb41-48ab-81e9-85aee9cfb89c">
+
 Jika port antara server dan client sama, program akan berjalan tanpa error. Namun, jika port antara server dan client berbeda, misalnya port 8080 untuk server dan port 2000 untuk client, maka akan muncul error "Connection refused". Ini menunjukkan bahwa client mencoba terhubung ke port yang tidak ada server yang mendengarkan.
 
 Dalam kasus ini, client mencoba menghubungi port 2000, tetapi server mendengarkan di port 8080. Agar client dan server dapat berkomunikasi, port yang digunakan harus sama. Misalnya, jika server mendengarkan di port 8080, client juga harus terhubung ke port yang sama.
