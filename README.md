@@ -42,3 +42,24 @@ Port client dan server berbeda
 Jika port antara server dan client sama, program akan berjalan tanpa error. Namun, jika port antara server dan client berbeda, misalnya port 8080 untuk server dan port 2000 untuk client, maka akan muncul error "Connection refused". Ini menunjukkan bahwa client mencoba terhubung ke port yang tidak ada server yang mendengarkan.
 
 Dalam kasus ini, client mencoba menghubungi port 2000, tetapi server mendengarkan di port 8080. Agar client dan server dapat berkomunikasi, port yang digunakan harus sama. Misalnya, jika server mendengarkan di port 8080, client juga harus terhubung ke port yang sama.
+
+***Experiment 2.3: Small changes, add IP and Port***
+
+Saya melakukan beberapa modifikasi pada server.rs dan client.rs. 
+
+Pada `server.rs` saya memodifikasinya menjadi:
+```rust
+println!("New connection from Wahyu's Computer{addr:?}");
+```
+
+dan
+```rust
+bcast_tx.send(format!("{addr}: {text}"))?;
+```
+
+Pada `client.rs` saya memodifikasinya menjadi:
+```rust
+if let Some(text) = msg.as_text() {
+    println!("Wahyu's Computer - From server: {}", text);
+}
+```
